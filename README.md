@@ -20,7 +20,7 @@ It uses **MFCC features** extracted from audio and a **Bidirectional LSTM model*
   
   venv\Scripts\activate       # Windows
 
-##Installing requirements
+## Installing requirements
 
 
 pip install -r requirements.txt
@@ -28,5 +28,5 @@ pip install -r requirements.txt
 ## For backend
 python api.py
 
-##For frontend
+## For frontend
 npm start
