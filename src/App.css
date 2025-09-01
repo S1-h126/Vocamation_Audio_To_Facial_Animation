@@ -1,0 +1,36 @@
+:root{
+  --primary: #e96f9c;
+  --secondary:#1f5540;
+  --focus: #281d1e;
+  --back1: #80123198;
+  --back2: #310b0b8c;
+}
+
+
+
+.App {
+  text-align: center;
+  height: 100%;
+  /* background: radial-gradient(circle closest-side,var(--secondary), var(--primary)); */
+  background: var(--primary);
+}
+
+
+* {
+  font-family: 'Roboto', sans-serif;
+  font-size: 30px;
+  color: var(--secondary);
+}
+
+
+ 
+/* --bg-color: #DFE8E7;
+--font-color: #A6BFBC;
+--font-color-focus: #C2888E; */
+
+/* --primary: #0B0D1F;
+--secondary:#1F2455;
+--focus: #C2888E;
+--dark: #533B4D; */
+
+

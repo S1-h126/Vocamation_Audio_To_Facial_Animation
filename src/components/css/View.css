@@ -1,0 +1,447 @@
+ /* #play {
+    left: 80px;
+    top: 50px;
+    font-size: 40px;
+}
+
+#pause {
+    left: 180px;
+    top: 50px;
+    font-size: 40px;
+}
+
+#stop {
+    left: 280px;
+    top: 50px;
+    font-size: 40px;
+}  */
+
+/* Change the icon color */
+#play i, #pause i, #stop i {
+ background-color: transparent; /* Change to your desired color */
+    font-size: 30px; /* Adjust the icon size */
+    gap: 30px;
+    position: relative;
+    top: 5px; /* Adjust as needed to move it lower */
+    left: 30 px;
+    bottom: 120px;
+    color: #be9393
+}
+
+/* Change color on hover */
+#play:hover i, #pause:hover i, #stop:hover i {
+    color: var(--focus); /* Change to your hover color */
+}
+
+
+.right {
+    position: absolute;
+    right: 0px;
+}
+
+#info-button {
+    position: absolute;
+    right: 0px;
+    bottom:5px;
+}
+
+.logout{
+    -webkit-text-stroke: 5px var(--primary);
+    font-size: 50px;
+}
+
+.logout:hover{
+    color: var(--focus);
+}
+
+#info-head{
+    color: var(--focus);
+    font-size: 70px;
+    font-weight: bold;
+}
+
+#info-inst-head{
+    margin-top: 20px;
+    color: var(--focus);
+    font-size: 40px;
+    font-weight: bold;
+}
+
+#info-inst{
+    color: var(--focus);
+    margin:10px;
+}
+
+#info-authors{
+    color: var(--focus);
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+b{
+    color: var(--focus);
+}
+
+#info-text{
+    color: var(--focus);
+    font-size: 30px;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-top: 10px;
+    margin-bottom:10px;
+    text-align: justify;
+}
+
+
+.top {
+    position: absolute;
+    top: 0px;
+}
+
+
+/* .vertical {
+    display: flex;
+    flex-direction: column;
+} */
+
+.horizontal {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    /* align-items: baseline; */
+    margin-bottom: 10px;
+}
+
+/* .vert{
+    align-items: center;
+    justify-content: center;
+    
+} */
+
+
+.narrow {
+    width: 100px;
+}
+
+.spacer {
+    flex-grow: 1;
+}
+
+.popup {
+    height:100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#menu-icon{
+    width: 40px;
+  height: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+  margin-top: 20px;
+  margin-left:20px;
+}
+
+.menu-bar{
+    width: 100%;
+  height: 4px;
+  background-color: #a98493;
+  border-radius: 2px;
+  transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+#menu-icon.open .menu-bar:nth-child(1) {
+    transform: translateY(10px) rotate(45deg);
+  }
+  
+#menu-icon.open .menu-bar:nth-child(2) {
+    opacity: 0;
+  }
+  
+#menu-icon.open .menu-bar:nth-child(3) {
+    transform: translateY(-10px) rotate(-45deg);
+  }
+  
+  /* Hover effect */
+#menu-icon:hover .menu-bar {
+    background-color: var(--focus);
+  }
+  
+  /* Slight bounce effect on click */
+#menu-icon:active {
+    transform: scale(1.1);
+  }
+
+
+#popup-text{
+    color: var(--focus);
+    font-size: 40px;
+}
+
+#popup-close{
+    width: fit-content;
+    color: var(--focus);
+    font-size: 40px;
+}
+
+#popup-close:hover{
+    color: var(--secondary)
+}
+
+#logout-button{
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+.styled-button{
+    background-color: #b5909e; /* Green background */
+  color: rgb(78, 27, 27); /* White text */
+  padding: 12px 20px; /* Padding around the button */
+  border: none; /* No border */
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer; /* Pointer cursor on hover */
+  font-size: 16px; /* Font size */
+  transition: background-color 0.3s ease; /* Smooth transition on hover */
+  bottom: 100px;
+}
+.upload-button {
+    display: flex;
+    align-items: center; /* Aligns the icon and text */
+    gap: 8px; /* Space between the icon and text */
+    font-size: 16px;
+  }
+  
+  #chosen-file {
+    margin-bottom: 10px; /* Space between filename and button */
+    font-size: 16px; /* Adjust font size for the filename */
+    color: #dbd3d3; /* Dark color for the filename */
+  }
+
+.styled-button:focus{
+    outline:none
+}
+
+.styled-button:hover{
+    color: var(--focus)
+}
+
+input[type="file"] {
+    display: none;
+}
+
+#upload-input{
+    left:0px;
+}
+
+#upload-button{
+    padding: 0;
+    /* margin-top: -40px; */
+    height: 50px;
+    width: 100px;
+    position: absolute;
+    top: 450px;
+    left: 20px;
+    font-size: 16px;
+    background-color: #b5909e; /* Green background */
+  color: rgb(78, 27, 27); /* White text */
+  padding: 12px 20px; /* Padding around the button */
+  border: none; /* No border */
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer; /* Pointer cursor on hover */
+  font-size: 16px; /* Font size */
+  transition: background-color 0.3s ease; /* Smooth transition on hover */
+}
+
+#upload-text {
+    left: 400px;
+}
+
+#exp-int {
+    position: absolute;
+    right: 20%;
+    top: 50%;
+    color: #c59de9;
+    
+}
+
+.slider-container {
+    position: relative; /* Allows positioning inside it */
+    width: fit-content; /* Adjust based on your needs */
+  }
+
+#slider-value {
+    position: absolute;
+    right: 15%;  /* Match the value container’s position with the slider */
+    top: 55%;  /* Vertically center it with the slider */
+    transform: translateY(-50%);  /* Keep it vertically centered */
+    font-size: 30px;
+    font-weight: bold;
+    color: #c59de9;
+}
+  
+
+#slider {
+    position: absolute;
+    right: 30%;  /* Adjust this value to move it slightly to the right */
+    top: 50%;  /* Keep the slider vertically centered */
+    transform: translateY(-50%);  /* Perfect vertical centering */
+    height: 200px;  /* Set height for the vertical slider */
+    width: 12px;  /* Narrow width */
+    writing-mode: vertical-lr;  /* Make the slider vertical */
+    border: 2px solid #c2c5c2; /* Add a border with your desired color */
+    border-radius: 5px; /* Rounded edges */
+    background: #ddd;  /* Background of the track */
+}
+
+#slider::-webkit-slider-runnable-track {
+    background: linear-gradient(to top, #d3c2b2, #575447); /* Change the filled color */
+    border-radius: 5px;
+    height: 100%; /* Full height */
+}
+
+#slider::-webkit-slider-thumb {
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    background-color: #dac1aa;
+    border: 2px solid #743030;
+    border-radius: 50%;
+    margin-left: -5px;
+    cursor: pointer;
+    margin-top: -3px; /* Adjust position */
+}
+
+
+
+#progress{
+    position: absolute;
+    left: -23px;
+    bottom: -10px;
+    width: 310px;
+    height: 15px;
+    border: 2px solid #e6ede6; /* Add a border with your desired color */
+    border-radius: 5px; /* Rounded edges */
+    background-color: #936565;  /* Background of progress bar */
+}
+    
+
+
+#progress::-webkit-progress-bar {
+    background-color: #715d5d;  /* Background of entire progress bar */
+    border-radius: 10px;
+}
+
+#progress::-webkit-progress-value {
+    background-color: #503e3a;  /* Progress bar fill color */
+    border-radius: 10px;
+}
+
+#progress::-moz-progress-bar {
+    background-color: #50403c;  /* For Firefox */
+    border-radius: 10px;
+}
+
+.bottom {
+    position: absolute;
+    bottom: 35px;
+    left: 15px;
+    align-items: flex-end;
+}
+
+canvas {
+    background-color: transparent;
+    color: transparent;
+    outline: none;
+    border:none;
+}
+
+.loader-container, .top, .bottom {
+    grid-area: 1 / 1;
+}
+
+#view-container{
+    display: grid;
+}
+
+.background {
+    position: absolute;
+    top: 0%;
+    background: radial-gradient(var(--back1), var(--back2));
+    height: 100%;
+    width: 100%;
+    z-index: 10;
+}
+
+.loader {
+    width: 100px;
+	height: 100px;
+}
+
+.loader:before {
+    z-index: 11;
+    position: absolute;
+    top: calc(50% - 175px);
+    left: calc(50% - 175px);
+    content: '';
+	width: 350px;
+	height: 350px;
+	border-radius: 100%;
+    border-bottom: 0 solid #ffffff05;
+	
+	box-shadow: 
+		0 -10px 20px 20px #c2888e4d inset,
+		0 -5px 15px 10px #c2888e54 inset,
+		0 -2px 5px #c2888e83 inset,
+		0 -3px 2px #c2888ea6 inset,
+		0 2px 0px #c2888ee5,
+		0 2px 3px #C2888E,
+		0 5px 5px #c2888ee5,
+		0 10px 15px #c2888e83,
+		0 10px 20px 20px #c2888e5b;
+	filter: blur(3px);
+	animation: 2s rotate linear infinite;
+}
+
+@keyframes rotate {
+	100% {
+		transform: rotate(360deg)
+	}
+}
+
+#choose-file{
+    position:absolute;
+    top: 150px;
+    left: 20px;
+}
+
+.recorder{
+    position: absolute;
+    top:195px;
+    left: 10px
+}
+
+#chosen-file{
+    position: absolute;
+    top: 300px;
+    left: 20px;
+    text-decoration: underline;
+    width: fit-content;
+}
+
+.bottom.horizontal {
+    display: flex;
+    justify-content: center; /* Centers the buttons */
+    align-items: center;
+    gap: 10px; /* Adds spacing between buttons */
+    position: absolute;
+    bottom: 5px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+
+
