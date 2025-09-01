@@ -14,6 +14,8 @@ It uses **MFCC features** extracted from audio and a **Bidirectional LSTM model*
  ## Creating virtual enviroment
   python -m venv venv
   source venv/bin/activate    # Linux/macOS
+
+  
   venv\Scripts\activate       # Windows
 
 ##Installing requirements
